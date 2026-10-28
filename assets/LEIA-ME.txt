@@ -1,0 +1,5 @@
+Coloque aqui os arquivos originais da sua pasta assets:
+logo.png, galhos.svg, camtuc.png, ufpa.png, x.png, linkedin.png, facebook.png, instagram.png.
+As capas do carrossel, fotos do programa e logos dos parceiros permanecem como placeholders.
+Os valores dos indicadores aguardam dados oficiais. A busca e os ícones de redes são apenas visuais nesta etapa.
+Abra index.html pelo Live Server do VS Code para carregar header.html e footer.html.

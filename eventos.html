@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#86247e" name="theme-color"/>
+<meta content="Eventos do Programa Mulheres e Meninas nas Engenharias." name="description"/>
+<title>Eventos | Mulheres e Meninas nas Engenharias</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Rounded" rel="stylesheet"/>
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/header.css" rel="stylesheet"/>
+<link href="css/eventos.css" rel="stylesheet"/>
+<link href="css/footer.css" rel="stylesheet"/>
+<script defer="" src="js/components.js"></script>
+<script defer="" src="js/dados.js"></script><script defer="" src="js/demonstracao.js"></script>
+<script defer="" src="js/publico.js"></script><link href="css/criador.css" rel="stylesheet"/><script defer="True" src="js/criador-ui.js"></script><link rel="stylesheet" href="css/conta.css"><script defer src="js/auth.js"></script><script defer src="js/conta-ui.js"></script></head>
+<body data-pagina="eventos">
+<div id="header-container"></div>
+<main id="conteudo-principal">
+<section class="eventos-pagina">
+<div class="container">
+<div class="eventos-barra">
+<div class="eventos-pesquisa">
+<label class="sr-only" for="pesquisa-eventos">
+                            Pesquisar eventos
+                        </label>
+<span aria-hidden="true" class="material-symbols-rounded">
+                            search
+                        </span>
+<input id="pesquisa-eventos" placeholder="Pesquisar eventos" type="search"/>
+</div>
+</div>
+<div class="eventos-cabecalho">
+<h1>Encontre Eventos</h1>
+<div class="eventos-filtros">
+<div class="filtro-grupo">
+<label for="filtro-categoria">Categoria</label>
+<select id="filtro-categoria">
+<option value="">Todas</option>
+<option value="palestra">Palestra</option>
+<option value="oficina">Oficina</option>
+<option value="jornada">Jornada</option>
+<option value="seminario">Seminário</option>
+</select>
+</div>
+<div class="filtro-grupo">
+<label for="filtro-data">Data</label>
+<select id="filtro-data">
+<option value="">Todas</option>
+<option value="proximos">Próximos eventos</option>
+<option value="passados">Eventos anteriores</option>
+</select>
+</div>
+<div class="filtro-grupo">
+<label for="filtro-tipo">Tipo de evento</label>
+<select id="filtro-tipo">
+<option value="">Todos</option>
+<option value="presencial">Presencial</option>
+<option value="online">Online</option>
+<option value="hibrido">Híbrido</option>
+</select>
+</div>
+<div class="filtro-grupo">
+<label for="filtro-status">Status</label>
+<select id="filtro-status">
+<option value="">Todos</option>
+<option value="inscricoes-abertas">Inscrições abertas</option>
+<option value="encerrado">Encerrado</option>
+</select>
+</div>
+<div class="filtro-grupo filtro-ordenacao">
+<label for="filtro-ordem">Ordenar por</label>
+<select id="filtro-ordem">
+<option value="recentes">Mais recentes</option>
+<option value="antigos">Mais antigos</option>
+<option value="nome">Nome</option>
+</select>
+</div>
+</div>
+</div>
+<section aria-labelledby="eventos-resultados-titulo" class="eventos-resultados">
+<h2 id="eventos-resultados-titulo">Eventos Encontrados</h2>
+<div class="eventos-grade" data-lista="eventos"><p class="estado-vazio" role="status">Ainda não há eventos cadastrados.</p></div>
+</section>
+</div>
+</section>
+</main>
+<div id="footer-container"></div>
+</body>
+</html>

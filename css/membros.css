@@ -1,0 +1,158 @@
+
+.membros-pagina {
+    min-height: 65vh;
+    padding: 42px 0 65px;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fdfbfe 100%
+    );
+}
+
+.membros-titulo {
+    margin: 0 0 28px;
+    color: #351d3c;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.membros-titulo em {
+    font-style: normal;
+    color: #bc2a8b;
+}
+
+.membros-grade {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 35px;
+    row-gap: 48px;
+}
+
+.membro-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.membro-foto {
+    width: 155px;
+    height: 155px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    background: linear-gradient(
+        145deg,
+        #48404d,
+        #302a35
+    );
+    color: #aaa1ae;
+    border: 3px solid #f0e4f1;
+    box-shadow: 0 7px 20px rgba(54, 26, 61, .14);
+    margin-bottom: 15px;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.membro-foto .material-symbols-rounded {
+    font-size: 28px;
+}
+
+.membro-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.membro-card:hover .membro-foto {
+    transform: translateY(-4px);
+    border-color: #c98ac5;
+    box-shadow: 0 12px 25px rgba(54, 26, 61, .20);
+}
+
+.membro-card h2 {
+    margin: 0 0 5px;
+    color: #351d3c;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.membro-card p {
+    margin: 0;
+    color: #756a7b;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media (max-width: 850px) {
+    .membros-titulo {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .membros-grade {
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+    .membro-foto {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media (max-width: 600px) {
+    .membros-pagina {
+        padding: 28px 0 40px;
+    }
+
+    .membros-titulo {
+        margin-bottom: 22px;
+        font-size: 24px;
+    }
+
+    .membros-grade {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 15px;
+        row-gap: 35px;
+    }
+
+    .membro-foto {
+        width: 115px;
+        height: 115px;
+        margin-bottom: 12px;
+    }
+
+    .membro-card h2 {
+        font-size: 13px;
+    }
+
+    .membro-card p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .membro-foto {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .membro-foto {
+        transition: none;
+    }
+
+    .membro-card:hover .membro-foto {
+        transform: none;
+    }
+}

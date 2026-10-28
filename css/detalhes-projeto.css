@@ -1,0 +1,360 @@
+
+.projeto-banner {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #38243e;
+}
+
+.projeto-banner-imagem {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #48404e, #302a35);
+    color: #aaa1ae;
+}
+
+.projeto-banner-imagem .material-symbols-rounded {
+    font-size: 28px;
+}
+
+.projeto-banner-sombra {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 16, 49, .75),
+        rgba(74, 25, 76, .40),
+        rgba(35, 18, 42, .60)
+    );
+}
+
+.projeto-banner-conteudo {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.projeto-banner-conteudo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -.035em;
+}
+
+.projeto-detalhes {
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.projeto-secao {
+    margin-bottom: 45px;
+}
+
+.projeto-secao:last-child {
+    margin-bottom: 0;
+}
+
+.projeto-titulo-faixa {
+    position: relative;
+    padding: 14px 22px;
+    margin-bottom: 25px;
+    background: linear-gradient(
+        100deg,
+        #f4e8f4,
+        #f8eff8 55%,
+        #f1e3f3
+    );
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.projeto-titulo-faixa::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(
+        180deg,
+        #842580,
+        #c82c92
+    );
+}
+
+.projeto-titulo-faixa h2 {
+    margin: 0;
+    color: #422249;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -.025em;
+}
+
+.projeto-conteudo-duplo {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 35px;
+    padding: 0 10px;
+}
+
+.projeto-texto p {
+    margin: 0 0 15px;
+    color: #625967;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.projeto-texto p:last-child {
+    margin-bottom: 0;
+}
+
+.projeto-foto {
+    min-height: 240px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+    background: linear-gradient(
+        145deg,
+        #48404d,
+        #302a35
+    );
+    color: #aaa1ae;
+    border: 1px solid #e7e0e8;
+    box-shadow: 0 10px 28px rgba(54, 26, 61, .10);
+}
+
+.projeto-foto .material-symbols-rounded {
+    font-size: 28px;
+}
+
+.projeto-objetivos,
+.projeto-resultados-lista {
+    margin: 0;
+    padding-left: 30px;
+    color: #625967;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.projeto-objetivos li,
+.projeto-resultados-lista li {
+    padding-left: 5px;
+    margin-bottom: 8px;
+}
+
+.projeto-objetivos li::marker,
+.projeto-resultados-lista li::marker {
+    color: #a32d87;
+}
+
+.projeto-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 10px;
+}
+
+.projeto-acao {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 25px;
+    align-items: center;
+    padding: 16px;
+    background: #f8f5f9;
+    border: 1px solid #eee5ef;
+    border-radius: 13px;
+}
+
+.projeto-acao-imagem {
+    min-height: 170px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(
+        145deg,
+        #48404d,
+        #302a35
+    );
+    color: #aaa1ae;
+}
+
+.projeto-acao-imagem .material-symbols-rounded {
+    font-size: 28px;
+}
+
+.projeto-acao-conteudo h3 {
+    margin: 0 0 10px;
+    color: #351d3c;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.projeto-acao-conteudo p {
+    margin: 0 0 16px;
+    color: #625967;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.projeto-acao-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #86247e;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.projeto-acao-link:hover {
+    color: #bc2a8b;
+}
+
+.projeto-acao-link .material-symbols-rounded {
+    font-size: 18px;
+}
+
+.projeto-voluntariado {
+    margin-bottom: 45px;
+    padding: 20px 0;
+    background: linear-gradient(
+        100deg,
+        #61206e,
+        #842580
+    );
+    color: #fff;
+}
+
+.projeto-voluntariado .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+}
+
+.projeto-voluntariado p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.projeto-voluntariado a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.projeto-voluntariado a .material-symbols-rounded {
+    font-size: 18px;
+}
+
+@media (max-width: 850px) {
+    .projeto-conteudo-duplo {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .projeto-acao {
+        grid-template-columns: 220px 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projeto-banner {
+        height: 190px;
+    }
+
+    .projeto-banner-conteudo h1 {
+        font-size: 24px;
+    }
+
+    .projeto-detalhes {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+    .projeto-secao {
+        margin-bottom: 30px;
+    }
+
+    .projeto-titulo-faixa {
+        padding: 12px 17px;
+        margin-bottom: 20px;
+    }
+
+    .projeto-titulo-faixa h2 {
+        font-size: 19px;
+    }
+
+    .projeto-conteudo-duplo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .projeto-texto p {
+        font-size: 14px;
+    }
+
+    .projeto-foto {
+        min-height: 190px;
+    }
+
+    .projeto-objetivos,
+    .projeto-resultados-lista {
+        padding-left: 24px;
+        font-size: 14px;
+    }
+
+    .projeto-acoes {
+        padding: 0;
+    }
+
+    .projeto-acao {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .projeto-acao-imagem {
+        min-height: 180px;
+    }
+
+    .projeto-acao-conteudo h3 {
+        font-size: 16px;
+    }
+
+    .projeto-acao-conteudo p {
+        font-size: 13px;
+    }
+
+    .projeto-voluntariado {
+        margin-bottom: 30px;
+    }
+
+    .projeto-voluntariado .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projeto-voluntariado p {
+        font-size: 14px;
+    }
+}
